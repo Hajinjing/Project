@@ -1,0 +1,14 @@
+from selenium import webdriver
+import time
+import random
+
+browser= webdriver.Chrome('./chromedriver')
+browser.get('http://www.naver.com')
+browser.find_element_by_class_name('link_login').click()
+
+# elem=browser.find_element_by_id('id')
+# elem.send_keys('aaa')
+# elem=browser.find_element_by_id('pw')
+# elem.send_keys('bbb')
+
+# browser.find_element_by_id('log.login')
